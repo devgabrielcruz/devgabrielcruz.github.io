@@ -6,6 +6,8 @@ body {
     font-family: Arial;
     margin: 150px 200px;
     text-align: center;
+    background-size: cover;
+    background: #5982FF;
 }
 
 .contador {
@@ -14,10 +16,21 @@ body {
     border: 1px solid #e4e4e4;
     border-radius: 20px;
     margin-bottom: 20px;
+    height: 200px;
+}
+
+h1 {
+    color: #5982ff;
+    font-size: 35px;
+}
+
+.contador p {
+    font-size: 20px;
+    color: #676767;
 }
 
 .contador h1,p, button {
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .contador input {
@@ -27,11 +40,12 @@ body {
 }
 
 .contador button {
-    background-color: green;
-    color: #ffffff;
+    background-color: #ffd100;
+    color: #676767;
     border: none;
-    padding: 12px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     margin: 0;
+    font-size: 17px;
 
 }
