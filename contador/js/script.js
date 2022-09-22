@@ -9,7 +9,7 @@ function contar() {
     } else if(chamadosAtuados.length >= 30) {
         alert(`UAU! Você é uma máquina! Conseguiu atuar em ${chamadosAtuados.length} chamados hoje.`);
     } else {
-        alert(`Você atuou em ${chamadosAtuados.length} chamados. Faltou ${20 - chamadosAtuados.length} para você alcançar a meta diária.`);
+        alert(`Você atuou em ${chamadosAtuados.length} chamados. Faltou ${20 - chamadosAtuados.length} para alcançar a meta diária.`);
     }
 
 }
