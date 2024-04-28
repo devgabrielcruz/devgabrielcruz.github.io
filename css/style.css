@@ -41,6 +41,18 @@ body {
     transform: scale(1.05);
 }
 
+h2.titulo {
+    text-align: center;
+    color: #fff;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+h2.titulo span {
+    color:#00ff08
+}
+
+/* Estilo menu */
 header {
     padding: 40px 4%;
 }
@@ -100,8 +112,12 @@ section.section1 .flex {
     margin: 40px 0;
 }
 
+/* Foi necessário o position relative 
+porque a imagem vai ficar se movendo na 
+animation, através do parâmetro top */
+
 .section1 .section-right img {
-    position: relative;
+    position: relative; 
     height: 420px;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
@@ -115,3 +131,35 @@ section.section1 .flex {
     }
 }
 
+/* Estilos section2 */
+
+section.section2 {
+    padding: 40px 4%;
+}
+
+section.section2  .flex {
+    gap: 60px;
+}
+
+.section2 .cards {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.section2 .cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff78;
+}
+
+.section2 .cards i {
+    color:#00ff08;
+    font-size: 70px
+}
+
+.section2 .cards h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
