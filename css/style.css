@@ -1,4 +1,4 @@
-/* Estilos gerais */ 
+/* Estilos gerais */
 
 * {
     margin: 0;
@@ -44,10 +44,11 @@ h2.titulo {
 }
 
 h2.titulo span {
-    color:#00ff08
+    color: #00ff08
 }
 
-button:hover, form .btn-enviar input:hover {
+button:hover,
+form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
@@ -57,7 +58,7 @@ header {
     padding: 40px 4%;
 }
 
-header > .main-wrapp {
+header>.main-wrapp {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,15 +97,15 @@ section.section1 .flex {
     gap: 90px;
 }
 
-.section1 .section-left h1 {
+.section1 h1 {
     color: #fff;
     font-size: 42px;
     line-height: 40px;
+    text-transform: uppercase;
 }
 
 .section1 .section-left h1 span {
     color: #00ff08;
-    font-size: 60px;
 }
 
 .section1 .section-left p {
@@ -117,16 +118,17 @@ porque a imagem vai ficar se movendo na
 animation, através do parâmetro top */
 
 .section1 .section-right img {
-    position: relative; 
+    position: relative;
     height: 420px;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
@@ -137,7 +139,7 @@ section.section2 {
     padding: 40px 4%;
 }
 
-section.section2  .flex {
+section.section2 .flex {
     gap: 60px;
 }
 
@@ -155,7 +157,7 @@ section.section2  .flex {
 }
 
 .section2 .cards i {
-    color:#00ff08;
+    color: #00ff08;
     font-size: 70px
 }
 
@@ -281,7 +283,8 @@ section.section5 {
     gap: 10px;
 }
 
-.section5 form input, form textarea {
+.section5 form input,
+form textarea {
     width: 100%;
     background: #242424;
     border: 0;
@@ -314,7 +317,7 @@ section.section5 {
 /* Estilos footer */
 
 footer {
-    padding: 40px 4%;    
+    padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
@@ -327,17 +330,116 @@ footer .flex {
 }
 
 footer .line-footer {
-    padding: 20px 0;    
+    padding: 20px 0;
 }
 
 footer .borda {
-    border-top:2px solid #00ff08;
+    border-top: 2px solid #00ff08;
 }
 
-footer .line-footer p i{
-    color:#00ff08;
+footer .line-footer p i {
+    color: #00ff08;
 }
 
 footer .line-footer p a {
     color: #fff;
+}
+
+@media screen and (max-width: 1020px) {
+
+    /* Classes gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* Cabeçalho */
+
+    header {
+        padding: 20px 4%;
+    }
+
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* Section1 */
+    .section1 .flex {
+        flex-direction: column-reverse;
+    }
+
+    section.section1 .flex {
+        gap: 50px;
+    }
+
+    section.section1 {
+        padding: 15px 8%;
+    }
+
+    .section1 h1 {
+        font-size: 30px;
+    }
+
+    .section1 .section-right img {
+        height: 300px;
+    }
+
+    /* Section2 */
+    section.section2 {
+        padding: 40px 8%;
+    }
+ 
+    /* Section3 */
+    .section3 .flex {
+        flex-direction: column-reverse;
+    }
+
+    section.section3 {
+        padding: 80px 8%;
+    }
+
+    .section3 .txt-sobre h2 {
+        font-size: 32px;
+        line-height: 30px;
+    }
+
+    .section3 .social-icons {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /* Projetos */
+    section.section4 {
+        padding: 80px 8%;
+    }
+
+    .section4 .img-projetos {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        
+    }
+
+    section.section4 .flex {
+        gap: 60px;
+    }
+
+    /* Footer */
+
+    footer .flex {
+    gap: 10px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
 }
